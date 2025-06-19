@@ -25,11 +25,11 @@ import torch.backends.cudnn as cudnn
 ########################################
 
 
-source_dir = 'inference/input/test3.mp4' # '0'    # 要打开的文件。若要调用摄像头，需要设置为字符串'0'，而不是数字0，按q退出播放
+source_dir = 'inference/input/2.mp4' # '0'    # 要打开的文件。若要调用摄像头，需要设置为字符串'0'，而不是数字0，按q退出播放
 output_dir = 'inference/output' # 要保存到的文件夹
 show_video = True   # 运行时是否显示
-save_video = True   # 是否保存运行结果视频
-save_text = True    # 是否保存结果数据到txt文件中，
+save_video = False   # 是否保存运行结果视频
+save_text = False    # 是否保存结果数据到txt文件中，
                     # result.txt的格式是(帧序号,框序号,框到左边距离,框到顶上距离,框横长,框竖高,-1,-1,-1,-1)，
                     # number.txt的内容是统计到第几帧时每条线沿两个方向的跨线物体数
 class_list = [2]    # 类别序号，在coco_classes.txt中查看（注意是序号不是行号），可以有一个或多个类别
@@ -39,7 +39,6 @@ lines = [           # 在这里定义检测线
     # 一条线就是一个list，内容为[x1, y1, x2, y2, (R, G, B), 线的粗细]，例如：
     [300, 1080, 1250, 600, (255,0,0), 2],
     [1660, 610, 1920, 900, (0,255,0), 2],
-
 ]
 
 

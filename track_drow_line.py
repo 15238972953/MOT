@@ -31,9 +31,9 @@ import torch.backends.cudnn as cudnn
 
 source_dir = 'inference\\input\\2.mp4'    # 要打开的文件。若要调用摄像头，需要设置为字符串'0'，而不是数字0
 output_dir = 'inference/output' # 要保存到的文件夹
-show_video = False   # 运行时是否显示
-save_video = True   # 是否保存运行结果
-save_text = True    # 是否保存结果数据到txt文件中
+show_video = True   # 运行时是否显示
+save_video = False   # 是否保存运行结果
+save_text = False    # 是否保存结果数据到txt文件中
 class_list = [0,1,2,3,5,7]    # 类别序号，在coco_classes中查看（注意是序号不是行号），可以有一个或多个类别
 
 ########################################

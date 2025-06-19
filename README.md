@@ -1,7 +1,5 @@
 # Yolov5_DeepSort_Traffic-counter
 
-
-
 ## 1、参数设置
 
 在count.py中，设置以下参数
